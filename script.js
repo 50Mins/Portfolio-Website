@@ -3,45 +3,69 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let ReScroll = document.createElement('button');
     
-    // Create an image element
     let img = document.createElement('img');
     img.src = 'Arrow.png'; 
     img.alt = 'Scroll to top';
     img.style.width = '30px';
     img.style.height = '30px';
     
-    // Append the image to the button
     ReScroll.appendChild(img);
     
-    // Set an ID so it can be styled
     ReScroll.id = 'scrollbutton';
     
-    // Find the container and append the button there
     let buttonContainer = document.getElementById('buttonContainer');
     
-    
     if (buttonContainer) {
-        buttonContainer.appendChild(ReScroll);  // Append the button to the container
+        buttonContainer.appendChild(ReScroll);
         console.log("Button appended successfully.");
     } else {
         console.error("buttonContainer not found!");
     }
 
-    // Add event listener to show the button after scrolling
     window.addEventListener('scroll', function() {
         if (window.scrollY > 850) {
-            ReScroll.style.display = 'block';  // Show the button
+            ReScroll.style.display = 'block';
         } else {
-            ReScroll.style.display = 'none';  // Hide the button
+            ReScroll.style.display = 'none';
         }
     });
 
-    // Add event listener to scroll to top when the button is clicked
     ReScroll.addEventListener('click', function() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
         console.log("Scrolling to top...");
+    });
+
+    const form = document.getElementById('contactForm');
+    const formResponse = document.getElementById('formResponse');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        formResponse.innerText = 'Sending...';
+        formResponse.style.display = 'block';
+
+        const formData = new FormData(form);
+        formData.append('secret', '%.lb&?>=<Gg1R-%3m?:u?z=.Q|9+H9wF|)),cH5xDDodmF66iU69^1zw--Gy&]F');
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => response.text())
+        .then(result => {
+
+            console.log(result);
+            console.log(formData, formResponse);
+            form.reset();
+            formResponse.innerText = 'Thank you for your message. I will get back to you';
+            formResponse.style.display = 'block';
+
+        })
+        .catch(error => {
+            console.error('Error!', error.message);
+        });
     });
 });

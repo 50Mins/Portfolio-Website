@@ -167,12 +167,12 @@ header nav ul li {
     color: white;
     margin: 0 auto;
     line-height: 1.6;
-    min-height: 100vh; /* Changed from height to min-height */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    margin-bottom: 50px; /* Added spacing below */
+    margin-bottom: 10px;
 }
 
 /* Project Section Text Styling */
@@ -233,18 +233,65 @@ header nav ul li {
 
 /* Contact Section */
 #contact {
-    margin-top: 50px; /* Ensure proper spacing above */
-    padding: 50px 20px;
     background-color: #333;
     text-align: center;
 }
 
-/* Email Link Styling in Contact */
+#contact h1 {
+    font-family: 'CustomFont', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 4em;
+    text-align: center;
+}
+
+/* Contact Form Styling */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contactForm label {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    height: 150%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contactForm textarea {
+    height: 150px; /* or any desired height */
+}
+
+#contactForm button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #005bb5;
+}
+
 #contact a {
     text-align: center;
     color: #0084ff;
 }
-
 
 /*Handle styling for button to scroll back up*/
 #scrollbutton {

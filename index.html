@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My Portfolio">
-    <title>My Portfolio</title>
+    <title>Harvey's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,7 +25,7 @@
         <h1>About Me</h1>
         <p>
             Hello! I’m Harvey, I have a strong passion and drive for everything Computer Science. I started my digital journey young, initially teaching myself to code Lua so that I could make my own 'ROBLOX' game.
-             I ended up becoming very profficient with Roblox's adaption of Lua, Luau. I used this skill to begin creating ROBLOX experiences, creating my first game at 11. Since then, I have expanded my knowledge even further,
+             I ended up becoming very proficient with Roblox's adaptation of Lua, Luau. I used this skill to begin creating ROBLOX experiences, creating my first game at 11. Since then, I have expanded my knowledge even further,
              and have multiple ROBLOX projects to this day, with my most popular reaching over 10,000 unique player visits and 200+ 'favourites' within its first 3 months of launch.
         </p>
         <p>
@@ -51,7 +51,7 @@
 
         <div class="skill3">
             <h2>Graphic/UI Design</h2>
-            <p>I have experience with designing UIs and graphics from my time spent with ROBLOX development, where UI is a very important factor of how a game plays. I am well versed with many common graphic design applications, and I understand the basics of colour theory aswell as how to create an appealing User Interface.</p>
+            <p>I have experience with designing UIs and graphics from my time spent with ROBLOX development, where UI is a very important factor of how a game plays. I am well versed with many common graphic design applications, and I understand the basics of colour theory as well as how to create an appealing User Interface.</p>
         </div>
     </section>
 
@@ -61,14 +61,14 @@
         <div class="project1">
             <h2>'East German Border' - ROBLOX Experience</h2>
             <p>
-                East German Border is a project that I spent 8 months developing, the game contains of over 200 code 'scripts', the vast majority of those were
-                written by hand, by me. Every aspect of the game, aside from a couple scripts that were commissioned by me from other developers, I created.
-                I taught myself all of the skills needed for this (Lua Coding, Game Design, Graphics/UI Design e.t.c), and I continue to use those skills today in other projects and updates for 'East German Border'.
+                East German Border is a project that I spent 8 months developing, the coding aspect of the game contains over 200 code 'scripts', the vast majority of those were
+                written by hand, by me. Every aspect of the game, aside from a couple of scripts that were commissioned by me from other developers, I created from scratch.
+                I taught myself all of the skills needed for this (Lua Coding, Game Design, Graphics/UI Design etc.), and I continue to use those skills today in other projects and updates for 'East German Border'.
                 'East German Border' is a ROBLOX experience that portrays the division between East and West germany as it were in the 1980's, with the option to play as a soldier, politician and more. 
              </p>
             <img src="EgbScreenshot.png" alt="East German Border ROBLOX page">
             <sub>
-                This does not affect my politicial affiliation, and is simply a simulation game of a time period I am interested in.
+                This does not reflect my political affiliation, and is simply a simulation game of a time period I am interested in.
              </sub>
             <a href=https://www.roblox.com/games/16799241028/East-German-Border-v1-0>East German Border ROBLOX page</a>
 
@@ -77,7 +77,7 @@
         <div class="project2">
             <h2>Blender Modelling</h2>
             <p>
-                I have experience with 3D Modelling in blender, I taught myself this skill as it was crucial to development of my ROBLOX game, and it can be useful in all areas of digital development. All images below except the porsche
+                I have experience with 3D Modelling in Blender, I taught myself this skill as it was crucial to development of my ROBLOX game, and it can be useful in all areas of digital development. All images below except the porsche
                 were both created from scratch and rendered by me.
             </p>
             <img src="BlenderWork.png" alt="East German Border ROBLOX page">
@@ -89,16 +89,26 @@
         <div class="project3">
             <h2>COMMUNITY MANAGEMENT</h2>
             <p>Throughout my time in game development, I've also realised that managing the community properly around your game is just as crucial. I've had many years of community management, taking administrative roles in communities for other games that I have helped to develop,
-                aswell as obviously managing the community of my own game. This means I have experience with things like creating documentation, spreadsheets, planners/organisers and marketing, which are all crucial to running a community effectively and smoothly.
+                as well as obviously managing the community of my own game. This means I have experience with things like creating documentation, spreadsheets, planners/organisers and marketing, which are all crucial to running a community effectively and smoothly.
             </p>
         </div>
     </section>
 
     <section id="contact">
         <h1>Get In Touch</h1>
-        <p>My prefferred method of contact is my email: <a href="mailto:your.email@example.com">50m1nut3z@gmail.com</a></p>
-        <p>If you are inquiring about development regarding ROBLOX, you can contact me via Discord: '50mins'</p>
-
+        <div class="container">
+            <form id="contactForm" action="https://script.google.com/macros/s/AKfycbzmpf64iz3oRb_ql3FObffHAHpu71xwiJwus9_4wXIeNocvcBcTu-LazKXexA6mg3JT/exec" method="POST">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            
+            <p id="formResponse" style="display:none; color: green;">Thank you for your message. We will get back to you soon!</p>
+            <p>My preferred method of contact is my email: <a href="mailto:50m1nut3z@gmail.com">50m1nut3z@gmail.com</a></p>
+            <p>If you are inquiring about development regarding ROBLOX, you can contact me via Discord: '50mins'</p>
+        </div>
     </section>
 
     <div id="buttonContainer"></div>
